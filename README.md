@@ -5,13 +5,17 @@
 <br/>
 
 [![Profile Views](https://komarev.com/ghpvc/?username=muzammilmonis&style=for-the-badge&color=f4bd32&label=PROFILE+SIGNALS)](https://github.com/muzammilmonis)
-[![GitHub followers](https://img.shields.io/github/followers/muzammilmonis?style=for-the-badge&logo=github&label=FOLLOWERS&color=f4bd32&labelColor=0b1118)](https://github.com/muzammilmonis?tab=followers)
+[![Followers](https://img.shields.io/github/followers/muzammilmonis?style=for-the-badge&logo=github&label=FOLLOWERS&color=f4bd32&labelColor=0b1118)](https://github.com/muzammilmonis?tab=followers)
 [![REST Tiers](https://img.shields.io/badge/REST_TIERS-tiers.rest-f4bd32?style=for-the-badge&labelColor=0b1118)](https://tiers.rest)
-[![Discord](https://img.shields.io/badge/REST_DISCORD-JOIN-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=0b1118)](https://dsc.gg/resttiers)
+[![REST Discord](https://img.shields.io/badge/REST_DISCORD-JOIN-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=0b1118)](https://dsc.gg/resttiers)
 
 </div>
 
 <img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/terminal.svg" width="100%" alt="Animated terminal identity" />
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/core-matrix.svg" width="100%" alt="Animated REST Studio core matrix" />
 
 ## `> SYSTEM_MANIFEST`
 
@@ -19,14 +23,14 @@
 IDENTITY     : Muzammil Monis // VoidNexus
 LAB          : REST STUDIO
 MODE         : BUILD → BREAK → OPTIMIZE → SHIP
-FOCUS        : Minecraft systems, backend tooling, automation, infrastructure
-PHILOSOPHY   : If the tool I want does not exist, build it.
+FOCUS        : Minecraft systems / backend tooling / automation / infrastructure
+RULE         : Build what should exist.
 STATUS       : ONLINE
 ```
 
 <div align="center">
 
-### ⚡ ACTIVE STACK
+### `// ACTIVE TOOLCHAIN`
 
 <img src="https://skillicons.dev/icons?i=java,js,ts,nodejs,python,html,css,linux,docker,mysql,redis,git,github,cloudflare&perline=14" alt="Technology stack" />
 
@@ -54,17 +58,17 @@ STATUS       : ONLINE
 <td width="50%" valign="top">
 
 ### ⚔️ [REST Tier Tagger](https://github.com/muzammilmonis/REST-Tier-Tagger)
-Minecraft-side REST Tiers integration and tier-tag tooling.
+REST Tiers integration and Minecraft-side tier-tag tooling.
 
 `JAVA` `MINECRAFT` `REST`
 
 </td>
 <td width="50%" valign="top">
 
-### 🧠 [EchoMind](https://github.com/muzammilmonis/EchoMind)
-An experimental public build from the REST/Void workspace.
+### 🧱 [RestServer](https://github.com/muzammilmonis/RestServer)
+Server runtime and performance-oriented Minecraft work.
 
-`EXPERIMENTAL` `TOOLING`
+`JAVA` `SERVER` `PERFORMANCE`
 
 </td>
 </tr>
@@ -74,33 +78,33 @@ An experimental public build from the REST/Void workspace.
 ### 🛰️ [rest-route](https://github.com/muzammilmonis/rest-route)
 Routing-focused tooling from the REST ecosystem.
 
-`NETWORKING` `REST`
+`NETWORKING` `ROUTING` `REST`
 
 </td>
 <td width="50%" valign="top">
 
-### 🧱 [restmc](https://github.com/muzammilmonis/restmc)
-Public Minecraft systems workspace.
+### 🌍 [restmc](https://github.com/muzammilmonis/restmc)
+Public Minecraft systems workspace and experiments.
 
-`MINECRAFT` `SERVER`
+`MINECRAFT` `SERVER` `TOOLS`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🤖 [nextjs-ai-chatbot](https://github.com/muzammilmonis/nextjs-ai-chatbot)
-AI/chat experimentation with a modern web stack.
+### 🧠 [EchoMind](https://github.com/muzammilmonis/EchoMind)
+Experimental public build from the Void/REST workspace.
 
-`NEXT.JS` `AI` `WEB`
+`EXPERIMENTAL` `TOOLING`
 
 </td>
 <td width="50%" valign="top">
 
-### 🌐 [seednodes](https://github.com/muzammilmonis/seednodes)
-Public node/infrastructure project workspace.
+### ⚡ [Nyra](https://github.com/muzammilmonis/Nyra)
+Another public build from the active lab.
 
-`INFRA` `NODES`
+`BUILD` `EXPERIMENT`
 
 </td>
 </tr>
@@ -108,22 +112,24 @@ Public node/infrastructure project workspace.
 
 <div align="center">
 
-[![Explore Repositories](https://img.shields.io/badge/EXPLORE_ALL_REPOSITORIES-0D1117?style=for-the-badge&logo=github&logoColor=F4BD32)](https://github.com/muzammilmonis?tab=repositories)
+[![Explore All Repositories](https://img.shields.io/badge/EXPLORE_ALL_REPOSITORIES-0D1117?style=for-the-badge&logo=github&logoColor=F4BD32)](https://github.com/muzammilmonis?tab=repositories)
 
 </div>
 
 ---
 
-## `> ACTIVITY_GRID // LIVE DATA`
+## `> ACTIVITY_GRID // REAL CONTRIBUTION DATA`
 
 <div align="center">
 
-<p><i>The animation below is generated from the real GitHub contribution grid.</i></p>
+<sub>The snake below is generated automatically from the real GitHub contribution calendar.</sub>
+
+<br/><br/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/output/github-contribution-grid-snake.svg" />
-  <img alt="Animated contribution snake" src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/output/github-contribution-grid-snake-dark.svg" />
+  <img alt="REST themed animated contribution snake" src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/output/github-contribution-grid-snake-dark.svg" />
 </picture>
 
 </div>
@@ -146,18 +152,32 @@ Public node/infrastructure project workspace.
 
 | SYSTEM | ENDPOINT | STATE |
 |:--|:--|:--:|
-| REST Tiers | [tiers.rest](https://tiers.rest) | `ONLINE` |
-| REST Community | [dsc.gg/resttiers](https://dsc.gg/resttiers) | `ACTIVE` |
-| GitHub Lab | [muzammilmonis](https://github.com/muzammilmonis) | `BUILDING` |
+| **REST Tiers** | [tiers.rest](https://tiers.rest) | `ONLINE` |
+| **REST Community** | [dsc.gg/resttiers](https://dsc.gg/resttiers) | `ACTIVE` |
+| **GitHub Lab** | [@muzammilmonis](https://github.com/muzammilmonis) | `BUILDING` |
 
+</div>
+
+<details>
+<summary><b>▸ ACCESS // PROFILE PHILOSOPHY</b></summary>
 <br/>
 
 ```text
-╔══════════════════════════════════════════════════════════════╗
-║  THE GRAPH IS A SIDE EFFECT. THE SYSTEMS ARE THE POINT.     ║
-╚══════════════════════════════════════════════════════════════╝
+01. Build the thing instead of waiting for it.
+02. Automate repetitive work until the machine complains instead.
+03. Keep infrastructure observable and recoverable.
+04. Treat experiments as disposable; treat useful systems as products.
+05. The contribution graph is telemetry. The systems are the point.
 ```
 
-<sub>Designed as a custom profile interface for <b>muzammilmonis</b> • REST STUDIO</sub>
+</details>
+
+<br/>
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/footer-signal.svg" width="100%" alt="Animated end of transmission signal" />
+
+<sub><b>REST STUDIO</b> // profile interface engineered for <b>@muzammilmonis</b></sub>
 
 </div>
