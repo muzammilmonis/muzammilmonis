@@ -118,6 +118,20 @@ Another public build from the active lab.
 
 ---
 
+## `> FULL CONTRIBUTION-STYLE MATRIX // CUSTOM VISUAL`
+
+<div align="center">
+
+<sub>Custom profile visual. This is intentionally full and is not presented as GitHub contribution history.</sub>
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/full-contribution-matrix.svg" width="100%" alt="Animated full contribution-style profile matrix" />
+
+</div>
+
+---
+
 ## `> ACTIVITY_GRID // REAL CONTRIBUTION DATA`
 
 <div align="center">
