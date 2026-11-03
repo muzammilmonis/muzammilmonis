@@ -74,7 +74,7 @@
     </circle>
     <circle r="48" fill="#0B1118" stroke="#F4BD32" stroke-opacity=".75" filter="url(#glow)"/>
     <circle r="34" fill="#F4BD32" fill-opacity=".06" stroke="#F4BD32" stroke-opacity=".24"/>
-    <text y="-4" text-anchor="middle" fill="#F4BD32" font-family="Arial Black, Inter, Arial" font-size="17" font-weight="900" letter-spacing="3">VOID</text>
+    <text y="-4" text-anchor="middle" fill="#F4BD32" font-family="Arial Black, Inter, Arial" font-size="12" font-weight="900" letter-spacing="1.5">MUZAMMIL</text>
     <text y="17" text-anchor="middle" fill="#8B949E" font-family="ui-monospace, monospace" font-size="8" letter-spacing="2">CORE ONLINE</text>
     <circle cx="0" cy="-68" r="4" fill="#F4BD32">
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.5s" repeatCount="indefinite"/>
