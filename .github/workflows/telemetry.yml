@@ -1,0 +1,181 @@
+name: Generate live telemetry
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */12 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/telemetry.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-telemetry
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate telemetry SVG
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const username = 'muzammilmonis';
+
+            const esc = (v) => String(v ?? '')
+              .replaceAll('&', '&amp;')
+              .replaceAll('<', '&lt;')
+              .replaceAll('>', '&gt;')
+              .replaceAll('"', '&quot;');
+
+            const { data: user } = await github.rest.users.getByUsername({ username });
+            const repos = await github.paginate(github.rest.repos.listForUser, {
+              username,
+              type: 'owner',
+              sort: 'updated',
+              per_page: 100
+            });
+
+            const publicRepos = repos.filter(r => !r.fork);
+            const stars = publicRepos.reduce((n, r) => n + (r.stargazers_count || 0), 0);
+            const forks = publicRepos.reduce((n, r) => n + (r.forks_count || 0), 0);
+
+            let totalContrib = 0;
+            let currentStreak = 0;
+            let longestStreak = 0;
+            try {
+              const q = `query($login:String!){
+                user(login:$login){
+                  contributionsCollection{
+                    contributionCalendar{
+                      totalContributions
+                      weeks{ contributionDays{ date contributionCount } }
+                    }
+                  }
+                }
+              }`;
+              const data = await github.graphql(q, { login: username });
+              const cal = data.user.contributionsCollection.contributionCalendar;
+              totalContrib = cal.totalContributions || 0;
+              const days = cal.weeks.flatMap(w => w.contributionDays)
+                .sort((a,b) => a.date.localeCompare(b.date));
+
+              let run = 0;
+              for (const d of days) {
+                if ((d.contributionCount || 0) > 0) {
+                  run++;
+                  if (run > longestStreak) longestStreak = run;
+                } else {
+                  run = 0;
+                }
+              }
+
+              let i = days.length - 1;
+              if (i >= 0 && (days[i].contributionCount || 0) === 0) i--;
+              while (i >= 0 && (days[i].contributionCount || 0) > 0) {
+                currentStreak++;
+                i--;
+              }
+            } catch (e) {
+              core.warning(`Contribution calendar unavailable: ${e.message}`);
+            }
+
+            const langBytes = {};
+            for (const repo of publicRepos.slice(0, 40)) {
+              try {
+                const { data } = await github.rest.repos.listLanguages({
+                  owner: username,
+                  repo: repo.name
+                });
+                for (const [lang, bytes] of Object.entries(data)) {
+                  langBytes[lang] = (langBytes[lang] || 0) + bytes;
+                }
+              } catch (e) {
+                core.warning(`Languages unavailable for ${repo.name}: ${e.message}`);
+              }
+            }
+
+            const languageTotal = Object.values(langBytes).reduce((a,b) => a + b, 0) || 1;
+            const topLangs = Object.entries(langBytes)
+              .sort((a,b) => b[1] - a[1])
+              .slice(0, 5)
+              .map(([name, bytes]) => ({ name, pct: Math.max(1, Math.round(bytes * 100 / languageTotal)) }));
+
+            while (topLangs.length < 5) topLangs.push({ name: 'SYNCING', pct: 0 });
+
+            const metric = (x, label, value, sub='') => `
+              <g transform="translate(${x} 92)">
+                <rect width="198" height="92" rx="14" fill="#0D1117" stroke="#30363D"/>
+                <text x="18" y="27" fill="#7D8590" font-family="ui-monospace,monospace" font-size="10" letter-spacing="1.3">${esc(label)}</text>
+                <text x="18" y="60" fill="#F4BD32" font-family="Arial Black,Arial,sans-serif" font-size="26" font-weight="900">${esc(value)}</text>
+                <text x="18" y="79" fill="#8B949E" font-family="ui-monospace,monospace" font-size="9">${esc(sub)}</text>
+              </g>`;
+
+            const langRows = topLangs.map((l, i) => {
+              const y = 222 + i * 14;
+              const w = Math.round(430 * l.pct / Math.max(...topLangs.map(x => x.pct), 1));
+              return `
+                <text x="615" y="${y}" fill="#C9D1D9" font-family="ui-monospace,monospace" font-size="10">${esc(l.name)}</text>
+                <rect x="710" y="${y-9}" width="430" height="6" rx="3" fill="#21262D"/>
+                <rect x="710" y="${y-9}" width="${w}" height="6" rx="3" fill="#F4BD32" fill-opacity=".82"/>
+                <text x="1155" y="${y}" text-anchor="end" fill="#7D8590" font-family="ui-monospace,monospace" font-size="9">${l.pct}%</text>`;
+            }).join('');
+
+            const generated = new Date().toISOString().replace('T',' ').slice(0,16) + ' UTC';
+            const svg = `<svg width="1200" height="310" viewBox="0 0 1200 310" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="310">
+                  <stop stop-color="#05070B"/><stop offset=".5" stop-color="#0B1118"/><stop offset="1" stop-color="#05070B"/>
+                </linearGradient>
+                <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+                  <stop stop-color="#F4BD32" stop-opacity="0"/><stop offset=".5" stop-color="#FFF2A6" stop-opacity=".42"/><stop offset="1" stop-color="#F4BD32" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <rect width="1200" height="310" rx="24" fill="url(#bg)"/>
+              <rect x="1" y="1" width="1198" height="308" rx="23" fill="none" stroke="#F4BD32" stroke-opacity=".22"/>
+              <text x="44" y="45" fill="#F4BD32" font-family="ui-monospace,monospace" font-size="15" font-weight="700" letter-spacing="2">LIVE TELEMETRY // @muzammilmonis</text>
+              <text x="1155" y="45" text-anchor="end" fill="#7D8590" font-family="ui-monospace,monospace" font-size="10">${esc(generated)}</text>
+              <path d="M44 62H1156" stroke="#30363D"/>
+
+              ${metric(44, 'CONTRIBUTIONS / YEAR', totalContrib, 'GitHub calendar')}
+              ${metric(260, 'CURRENT STREAK', currentStreak, `longest ${longestStreak} days`)}
+              ${metric(476, 'PUBLIC REPOS', publicRepos.length, `${forks} forks`)}
+              ${metric(692, 'FOLLOWERS', user.followers || 0, 'public profile')}
+              ${metric(908, 'TOTAL STARS', stars, 'public repos')}
+
+              <text x="44" y="226" fill="#7D8590" font-family="ui-monospace,monospace" font-size="10" letter-spacing="1.3">PROFILE SIGNAL</text>
+              <text x="44" y="253" fill="#E6EDF3" font-family="ui-monospace,monospace" font-size="13">${esc(user.name || username)} // ${esc(username)}</text>
+              <text x="44" y="276" fill="#8B949E" font-family="ui-monospace,monospace" font-size="10">${esc(user.bio || 'REST Studio • systems • tooling • automation')}</text>
+              <circle cx="48" cy="294" r="4" fill="#3FB950"><animate attributeName="opacity" values="1;.25;1" dur="1.7s" repeatCount="indefinite"/></circle>
+              <text x="61" y="298" fill="#3FB950" font-family="ui-monospace,monospace" font-size="9">GITHUB API SYNCED</text>
+
+              <text x="615" y="204" fill="#7D8590" font-family="ui-monospace,monospace" font-size="10" letter-spacing="1.3">TOP LANGUAGES // PUBLIC REPOS</text>
+              ${langRows}
+
+              <rect x="-200" y="66" width="220" height="118" fill="url(#beam)" opacity=".20">
+                <animate attributeName="x" values="-220;1200;-220" dur="7s" repeatCount="indefinite"/>
+              </rect>
+            </svg>`;
+
+            fs.mkdirSync('assets', { recursive: true });
+            fs.writeFileSync('assets/live-telemetry.svg', svg);
+
+      - name: Commit refreshed telemetry
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/live-telemetry.svg
+          if git diff --cached --quiet; then
+            echo "Telemetry unchanged"
+          else
+            git commit -m "chore: refresh profile telemetry"
+            git push
+          fi
