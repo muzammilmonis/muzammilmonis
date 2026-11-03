@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/muzammil-header.svg" width="100%" alt="Muzammil animated profile header" />
+<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/muzammil-header.svg" width="100%" alt="Muzammil Monis animated profile header" />
 
 <br/>
 
@@ -11,11 +11,11 @@
 
 </div>
 
-<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/terminal.svg" width="100%" alt="Animated terminal identity" />
+<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/terminal.svg" width="100%" alt="Muzammil Monis terminal identity" />
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/core-matrix.svg" width="100%" alt="Animated REST Studio core matrix" />
+<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/core-matrix.svg" width="100%" alt="REST Studio animated core matrix" />
 
 ## `> SYSTEM_MANIFEST`
 
@@ -24,7 +24,6 @@ IDENTITY     : Muzammil Monis // @muzammilmonis
 LAB          : REST STUDIO
 MODE         : BUILD → BREAK → OPTIMIZE → SHIP
 FOCUS        : Minecraft systems / backend tooling / automation / infrastructure
-RULE         : Build what should exist.
 STATUS       : ONLINE
 ```
 
@@ -41,12 +40,34 @@ STATUS       : ONLINE
 ## `> LIVE_TELEMETRY`
 
 <div align="center">
-  <img height="185" src="https://github-readme-stats.vercel.app/api?username=muzammilmonis&show_icons=true&include_all_commits=true&count_private=false&hide_border=true&bg_color=00000000&title_color=f4bd32&text_color=c9d1d9&icon_color=f4bd32&ring_color=f4bd32" alt="GitHub stats" />
-  <img height="185" src="https://streak-stats.demolab.com?user=muzammilmonis&hide_border=true&background=00000000&ring=F4BD32&fire=F4BD32&currStreakLabel=F4BD32&sideLabels=C9D1D9&dates=7D8590&currStreakNum=E6EDF3&sideNums=E6EDF3" alt="GitHub streak" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=muzammilmonis&show_icons=true&include_all_commits=true&count_private=false&hide_border=true&bg_color=0B1118&title_color=F4BD32&text_color=C9D1D9&icon_color=F4BD32&ring_color=F4BD32" alt="Muzammil GitHub stats" />
+  <img height="180" src="https://streak-stats.demolab.com?user=muzammilmonis&hide_border=true&background=0B1118&ring=F4BD32&fire=F4BD32&currStreakLabel=F4BD32&sideLabels=C9D1D9&dates=7D8590&currStreakNum=E6EDF3&sideNums=E6EDF3" alt="Muzammil GitHub streak" />
 </div>
 
 <div align="center">
-  <img width="62%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=muzammilmonis&layout=compact&hide_border=true&bg_color=00000000&title_color=f4bd32&text_color=c9d1d9&langs_count=10" alt="Top languages" />
+  <img width="58%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=muzammilmonis&layout=compact&hide_border=true&bg_color=0B1118&title_color=F4BD32&text_color=C9D1D9&langs_count=10" alt="Top languages" />
+</div>
+
+---
+
+## `> CONTRIBUTION_STREAM // LIVE`
+
+<div align="center">
+
+<sub>Generated automatically from the GitHub contribution calendar.</sub>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/gh-pages/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/gh-pages/github-contribution-grid-snake.svg" />
+  <img alt="REST themed animated contribution snake" src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/gh-pages/github-contribution-grid-snake-dark.svg" />
+</picture>
+
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=muzammilmonis&bg_color=0B1118&color=C9D1D9&line=F4BD32&point=FFF2A6&area=true&area_color=F4BD32&hide_border=true&custom_title=MUZAMMIL%20MONIS%20%2F%2F%20ACTIVITY%20SIGNAL" width="100%" alt="Muzammil Monis contribution activity graph" />
+
 </div>
 
 ---
@@ -58,7 +79,7 @@ STATUS       : ONLINE
 <td width="50%" valign="top">
 
 ### ⚔️ [REST Tier Tagger](https://github.com/muzammilmonis/REST-Tier-Tagger)
-REST Tiers integration and Minecraft-side tier-tag tooling.
+Minecraft-side REST Tiers integration and tier-tag tooling.
 
 `JAVA` `MINECRAFT` `REST`
 
@@ -66,7 +87,7 @@ REST Tiers integration and Minecraft-side tier-tag tooling.
 <td width="50%" valign="top">
 
 ### 🧱 [RestServer](https://github.com/muzammilmonis/RestServer)
-Server runtime and performance-oriented Minecraft work.
+Minecraft server runtime and performance work.
 
 `JAVA` `SERVER` `PERFORMANCE`
 
@@ -76,7 +97,7 @@ Server runtime and performance-oriented Minecraft work.
 <td width="50%" valign="top">
 
 ### 🛰️ [rest-route](https://github.com/muzammilmonis/rest-route)
-Routing-focused tooling from the REST ecosystem.
+Routing and networking tooling from the REST ecosystem.
 
 `NETWORKING` `ROUTING` `REST`
 
@@ -84,7 +105,7 @@ Routing-focused tooling from the REST ecosystem.
 <td width="50%" valign="top">
 
 ### 🌍 [restmc](https://github.com/muzammilmonis/restmc)
-Public Minecraft systems workspace and experiments.
+Minecraft systems workspace and experiments.
 
 `MINECRAFT` `SERVER` `TOOLS`
 
@@ -94,7 +115,7 @@ Public Minecraft systems workspace and experiments.
 <td width="50%" valign="top">
 
 ### 🧠 [EchoMind](https://github.com/muzammilmonis/EchoMind)
-Experimental public build from the REST workspace.
+Experimental public tooling from REST Studio.
 
 `EXPERIMENTAL` `TOOLING`
 
@@ -102,7 +123,7 @@ Experimental public build from the REST workspace.
 <td width="50%" valign="top">
 
 ### ⚡ [Nyra](https://github.com/muzammilmonis/Nyra)
-Another public build from the active lab.
+Active public build and experimentation workspace.
 
 `BUILD` `EXPERIMENT`
 
@@ -113,48 +134,6 @@ Another public build from the active lab.
 <div align="center">
 
 [![Explore All Repositories](https://img.shields.io/badge/EXPLORE_ALL_REPOSITORIES-0D1117?style=for-the-badge&logo=github&logoColor=F4BD32)](https://github.com/muzammilmonis?tab=repositories)
-
-</div>
-
----
-
-## `> FULL CONTRIBUTION-STYLE MATRIX // CUSTOM VISUAL`
-
-<div align="center">
-
-<sub>Custom profile visual. This is intentionally full and is not presented as GitHub contribution history.</sub>
-
-<br/><br/>
-
-<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/full-contribution-matrix.svg" width="100%" alt="Animated full contribution-style profile matrix" />
-
-</div>
-
----
-
-## `> ACTIVITY_GRID // REAL CONTRIBUTION DATA`
-
-<div align="center">
-
-<sub>The snake below is generated automatically from the real GitHub contribution calendar.</sub>
-
-<br/><br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/gh-pages/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/gh-pages/github-contribution-grid-snake.svg" />
-  <img alt="REST themed animated contribution snake" src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/gh-pages/github-contribution-grid-snake-dark.svg" />
-</picture>
-
-</div>
-
----
-
-## `> SIGNAL_MAP`
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=muzammilmonis&bg_color=00000000&color=c9d1d9&line=f4bd32&point=ffffff&area=true&area_color=f4bd32&hide_border=true&custom_title=MUZAMMIL%20MONIS%20%2F%2F%20ACTIVITY%20SIGNAL" width="100%" alt="Contribution activity graph" />
 
 </div>
 
@@ -173,7 +152,7 @@ Another public build from the active lab.
 </div>
 
 <details>
-<summary><b>▸ ACCESS // PROFILE PHILOSOPHY</b></summary>
+<summary><b>▸ ACCESS // BUILD PRINCIPLES</b></summary>
 <br/>
 
 ```text
@@ -192,6 +171,6 @@ Another public build from the active lab.
 
 <img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/footer-signal.svg" width="100%" alt="Animated end of transmission signal" />
 
-<sub><b>REST STUDIO</b> // profile interface engineered for <b>@muzammilmonis</b></sub>
+<sub><b>REST STUDIO</b> // engineered by <b>Muzammil Monis</b> // <b>@muzammilmonis</b></sub>
 
 </div>
