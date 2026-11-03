@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/void-header.svg" width="100%" alt="VoidNexus animated profile header" />
+<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/muzammil-header.svg" width="100%" alt="Muzammil animated profile header" />
 
 <br/>
 
@@ -20,7 +20,7 @@
 ## `> SYSTEM_MANIFEST`
 
 ```text
-IDENTITY     : Muzammil Monis // VoidNexus
+IDENTITY     : Muzammil Monis // @muzammilmonis
 LAB          : REST STUDIO
 MODE         : BUILD → BREAK → OPTIMIZE → SHIP
 FOCUS        : Minecraft systems / backend tooling / automation / infrastructure
@@ -94,7 +94,7 @@ Public Minecraft systems workspace and experiments.
 <td width="50%" valign="top">
 
 ### 🧠 [EchoMind](https://github.com/muzammilmonis/EchoMind)
-Experimental public build from the Void/REST workspace.
+Experimental public build from the REST workspace.
 
 `EXPERIMENTAL` `TOOLING`
 
@@ -140,7 +140,7 @@ Another public build from the active lab.
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=muzammilmonis&bg_color=00000000&color=c9d1d9&line=f4bd32&point=ffffff&area=true&area_color=f4bd32&hide_border=true&custom_title=VOIDNEXUS%20%2F%2F%20ACTIVITY%20SIGNAL" width="100%" alt="Contribution activity graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=muzammilmonis&bg_color=00000000&color=c9d1d9&line=f4bd32&point=ffffff&area=true&area_color=f4bd32&hide_border=true&custom_title=MUZAMMIL%20MONIS%20%2F%2F%20ACTIVITY%20SIGNAL" width="100%" alt="Contribution activity graph" />
 
 </div>
 
