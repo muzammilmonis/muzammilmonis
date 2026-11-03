@@ -37,15 +37,14 @@ STATUS       : ONLINE
 
 ---
 
-## `> LIVE_TELEMETRY`
+## `> LIVE_TELEMETRY // SELF-HOSTED`
 
 <div align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=muzammilmonis&show_icons=true&include_all_commits=true&count_private=false&hide_border=true&bg_color=0B1118&title_color=F4BD32&text_color=C9D1D9&icon_color=F4BD32&ring_color=F4BD32" alt="Muzammil GitHub stats" />
-  <img height="180" src="https://streak-stats.demolab.com?user=muzammilmonis&hide_border=true&background=0B1118&ring=F4BD32&fire=F4BD32&currStreakLabel=F4BD32&sideLabels=C9D1D9&dates=7D8590&currStreakNum=E6EDF3&sideNums=E6EDF3" alt="Muzammil GitHub streak" />
-</div>
 
-<div align="center">
-  <img width="58%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=muzammilmonis&layout=compact&hide_border=true&bg_color=0B1118&title_color=F4BD32&text_color=C9D1D9&langs_count=10" alt="Top languages" />
+<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/live-telemetry.svg" width="100%" alt="Muzammil Monis self-hosted live GitHub telemetry" />
+
+<sub>Generated from GitHub data and refreshed automatically. No third-party stats-card dependency.</sub>
+
 </div>
 
 ---
