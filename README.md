@@ -66,7 +66,7 @@ STATUS       : ONLINE
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=muzammilmonis&bg_color=0B1118&color=C9D1D9&line=F4BD32&point=FFF2A6&area=true&area_color=F4BD32&hide_border=true&custom_title=MUZAMMIL%20MONIS%20%2F%2F%20ACTIVITY%20SIGNAL" width="100%" alt="Muzammil Monis contribution activity graph" />
+<img src="https://raw.githubusercontent.com/muzammilmonis/muzammilmonis/main/assets/activity-signal.svg" width="100%" alt="Muzammil Monis self-hosted animated activity signal" />
 
 </div>
 
